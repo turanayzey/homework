@@ -2,7 +2,8 @@
 
 This project is a simple car rental management system developed in Java.  
 It was created for educational purposes as part of the Distributed Information
-and Management Systems course and uploaded to Github for the SVV course assignment.
+and Management Systems course and uploaded to Github for the Software Verification
+and Validation course assignment.
 
 The application allows users to manage a car rental service through functionalities
 such as adding vehicles, registering customers, processing rental bookings.
