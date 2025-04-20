@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="268.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/17.0.6" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.car_rental.DriversController">
+    <top>
+        <AnchorPane prefHeight="270.0" prefWidth="402.0" BorderPane.alignment="CENTER">
+            <children>
+                <Text layoutX="164.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Drivers" textAlignment="CENTER">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Text>
+                <Label layoutX="58.0" layoutY="67.0" text="ID " />
+                <Label layoutX="40.0" layoutY="100.0" text="Name " />
+                <Label layoutX="30.0" layoutY="136.0" text="Address  " />
+                <Label layoutX="14.0" layoutY="169.0" text="Phone No " AnchorPane.rightAnchor="324.0" />
+                <TextField fx:id="D_id" layoutX="75.0" layoutY="63.0" />
+                <TextField fx:id="D_name" layoutX="75.0" layoutY="96.0" prefHeight="26.0" prefWidth="209.0" />
+                <TextField fx:id="D_address" layoutX="75.0" layoutY="132.0" prefHeight="26.0" prefWidth="211.0" />
+                <TextField fx:id="D_phone" layoutX="75.0" layoutY="165.0" />
+                <Button fx:id="getDriver" layoutX="234.0" layoutY="63.0"  onAction="#GetDriverNo" text="Fetch" />
+                <Button fx:id="saveDriver" layoutX="44.0" layoutY="217.0" onAction="#save" text="Save" />
+                <Button fx:id="updateDriver" layoutX="112.0" layoutY="217.0" onAction="#update" text="Update" />
+                <Button fx:id="deleteDriver" layoutX="199.0" layoutY="217.0" onAction="#delete" text="Delete" />
+                <Button fx:id="toVehicles" layoutX="285.0" layoutY="217.0" mnemonicParsing="false" text="Vehicles" onAction="#toVehicles" />
+            </children>
+        </AnchorPane>
+    </top>
+</BorderPane>
